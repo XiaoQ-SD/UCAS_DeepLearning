@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 CatDog/data
 CatDog/dataset
+MNIST/data
 # C extensions
 *.so
 
