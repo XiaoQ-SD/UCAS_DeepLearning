@@ -12,7 +12,6 @@ class MNIST(nn.Module):
         self.fc2 = nn.Linear(500, 10)  # input channel, answer vector
 
     def forward(self, x):
-        input_size = x.size(0)  # batch_size
         x = self.conv1(x)  # input: batch*1*28*28, output: batch*32*24*24
         x = F.leaky_relu(x)
         x = F.max_pool2d(x, 2, 2)  # input: batch*32*24*24, output: batch*32*12*12

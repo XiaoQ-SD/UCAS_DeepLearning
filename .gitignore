@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 CatDog/data
+CatDog/dataset
 # C extensions
 *.so
 
