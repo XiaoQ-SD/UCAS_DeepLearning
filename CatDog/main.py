@@ -1,16 +1,102 @@
-# 这是一个示例 Python 脚本。
+import os
+import random
+import shutil
 
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
+import torch
+import torch.nn.functional as F
+import torch.optim as optim
+import numpy as np
+import torchvision.transforms
+from torchvision import datasets
+from torch.utils.data import DataLoader
 
+from models.CNN import CNN
+#%%
+TestPath = 'data/test1'
+TrainPath = 'data/train'
 
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
+DatasetTrain = 'dataset/train'
+DatasetValidation = 'dataset/validation'
 
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+BATCH_SIZE = 2
+EPOCHS = 5
+LEARNING_RATE = 1e-3
+#%%
+def moveFiles():
+    files = os.listdir(TrainPath)
+    id = 0
+    ct = 0
+    for file in files:
+        src = os.path.join(TrainPath, file)
+        num = random.random()
+        if num >= 0.8:
+            ct += 1
+            if 'cat' in str(file):
+                tar = os.path.join(DatasetValidation, 'cats', file)
+            else:
+                tar = os.path.join(DatasetValidation, 'dogs', file)
+        else:
+            if 'cat' in str(file):
+                tar = os.path.join(DatasetTrain, 'cats', file)
+            else:
+                tar = os.path.join(DatasetTrain, 'dogs', file)
+        shutil.copyfile(src, tar)
+        id += 1
+        if id % 1000 == 0:
+            print('%d files moved, %d train, %d validation' % (id, id - ct, ct))
+#%%
+def checkFiles():
+    print(len(os.listdir(os.path.join(DatasetTrain, 'cats'))))
+    print(len(os.listdir(os.path.join(DatasetTrain, 'dogs'))))
+    print(len(os.listdir(os.path.join(DatasetValidation, 'cats'))))
+    print(len(os.listdir(os.path.join(DatasetValidation, 'dogs'))))
+#%%
+transforms = torchvision.transforms.Compose([
+    torchvision.transforms.Resize(512),
+    torchvision.transforms.CenterCrop(512),
+    torchvision.transforms.RandomHorizontalFlip(p=0.5),
+    torchvision.transforms.ToTensor(),
+    torchvision.transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+])
+train_dataset = datasets.ImageFolder(root=DatasetTrain, transform=transforms)
+test_dataset = datasets.ImageFolder(root=DatasetValidation, transform=transforms)
 
-# 按间距中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
+train_loader = DataLoader(dataset=train_dataset, batch_size=BATCH_SIZE, shuffle=True)
+test_loader = DataLoader(dataset=test_dataset, batch_size=BATCH_SIZE, shuffle=True)
 
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+print("Loading Data Finished")
+#%%
+model = CNN().to(DEVICE)
+optimizer = optim.Adam(model.parameters())
+#%%
+def train(model, device, train_loader, optimizer, epoch):
+    model.train()
+    for batch_index, (data, target) in enumerate(train_loader):
+        data, target = data.to(device), target.to(device)
+        optimizer.zero_grad()
+        output = model(data)
+        loss = F.cross_entropy(output, target)
+        pred = output.softmax(dim=1)
+        loss.backward()
+        optimizer.step()
+        if batch_index % 100 == 0:
+             print("train epoch %d, batch %d, loss %.6f" % (epoch, batch_index, loss.item()))
+#%%
+def evaluate(model, device, test_loader):
+    model.eval()
+    correct = 0.0
+    test_loss = 0.0
+    with torch.no_grad():
+        for data, target in test_loader:
+            data, target = data.to(device), target.to(device)
+            output = model(data)
+            test_loss += F.cross_entropy(output, target).item()
+            pred = output.argmax(dim=1)
+            correct += pred.eq(target.view_as(pred)).sum().item()
+        test_loss /= len(test_loader.dataset)
+        print("test average loss %.4f, accuracy %.4f" % (test_loss, 100.0 * correct / len(test_loader.dataset)))
+#%%
+for epoch in range(0, EPOCHS):
+    train(model, DEVICE, train_loader, optimizer, epoch)
+    evaluate(model, DEVICE, test_loader)
