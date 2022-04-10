@@ -5,6 +5,7 @@ __pycache__/
 CatDog/data
 CatDog/dataset
 MNIST/data
+CatDog/models/CNN.pth
 # C extensions
 *.so
 

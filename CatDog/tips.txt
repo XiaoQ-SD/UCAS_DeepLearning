@@ -1,0 +1,89 @@
+ssh://root@hz-t3.matpool.com:29770/root/miniconda3/envs/myconda/bin/python3.8 -u /mnt/UCAS_DeepLearning/CatDog/main.py
+Loading Data Finished
+train epoch 0, batch 0, loss 0.410272
+train epoch 0, batch 10, loss 0.591961
+train epoch 0, batch 20, loss 0.418389
+train epoch 0, batch 30, loss 0.377900
+train epoch 0, batch 40, loss 0.354773
+train epoch 0, batch 50, loss 0.365993
+train epoch 0, batch 60, loss 0.323303
+train epoch 0, batch 70, loss 0.337449
+train epoch 0, batch 80, loss 0.344980
+train epoch 0, batch 90, loss 0.408317
+train epoch 0, batch 100, loss 0.336166
+train epoch 0, batch 110, loss 0.331982
+train epoch 0, batch 120, loss 0.418028
+train epoch 0, batch 130, loss 0.472415
+train epoch 0, batch 140, loss 0.327935
+train epoch 0, batch 150, loss 0.315834
+test average loss 0.0028, accuracy 84.4200
+train epoch 1, batch 0, loss 0.387414
+train epoch 1, batch 10, loss 0.282305
+train epoch 1, batch 20, loss 0.299657
+train epoch 1, batch 30, loss 0.210179
+train epoch 1, batch 40, loss 0.279516
+train epoch 1, batch 50, loss 0.321817
+train epoch 1, batch 60, loss 0.408976
+train epoch 1, batch 70, loss 0.433896
+train epoch 1, batch 80, loss 0.263296
+train epoch 1, batch 90, loss 0.339018
+train epoch 1, batch 100, loss 0.313650
+train epoch 1, batch 110, loss 0.243236
+train epoch 1, batch 120, loss 0.283748
+train epoch 1, batch 130, loss 0.340171
+train epoch 1, batch 140, loss 0.405997
+train epoch 1, batch 150, loss 0.345617
+test average loss 0.0029, accuracy 83.7800
+train epoch 2, batch 0, loss 0.309069
+train epoch 2, batch 10, loss 0.284015
+train epoch 2, batch 20, loss 0.449576
+train epoch 2, batch 30, loss 0.310542
+train epoch 2, batch 40, loss 0.233712
+train epoch 2, batch 50, loss 0.314334
+train epoch 2, batch 60, loss 0.260253
+train epoch 2, batch 70, loss 0.357895
+train epoch 2, batch 80, loss 0.229961
+train epoch 2, batch 90, loss 0.313607
+train epoch 2, batch 100, loss 0.351998
+train epoch 2, batch 110, loss 0.307949
+train epoch 2, batch 120, loss 0.282627
+train epoch 2, batch 130, loss 0.191054
+train epoch 2, batch 140, loss 0.284597
+train epoch 2, batch 150, loss 0.248789
+test average loss 0.0030, accuracy 82.0600
+train epoch 3, batch 0, loss 0.464571
+train epoch 3, batch 10, loss 0.226935
+train epoch 3, batch 20, loss 0.249269
+train epoch 3, batch 30, loss 0.311486
+train epoch 3, batch 40, loss 0.252671
+train epoch 3, batch 50, loss 0.284695
+train epoch 3, batch 60, loss 0.169586
+train epoch 3, batch 70, loss 0.300598
+train epoch 3, batch 80, loss 0.251992
+train epoch 3, batch 90, loss 0.249635
+train epoch 3, batch 100, loss 0.326373
+train epoch 3, batch 110, loss 0.265994
+train epoch 3, batch 120, loss 0.248916
+train epoch 3, batch 130, loss 0.249467
+train epoch 3, batch 140, loss 0.251358
+train epoch 3, batch 150, loss 0.223418
+test average loss 0.0028, accuracy 84.4200
+train epoch 4, batch 0, loss 0.260753
+train epoch 4, batch 10, loss 0.261050
+train epoch 4, batch 20, loss 0.359434
+train epoch 4, batch 30, loss 0.260096
+train epoch 4, batch 40, loss 0.205845
+train epoch 4, batch 50, loss 0.191977
+train epoch 4, batch 60, loss 0.273062
+train epoch 4, batch 70, loss 0.180066
+train epoch 4, batch 80, loss 0.258374
+train epoch 4, batch 90, loss 0.198707
+train epoch 4, batch 100, loss 0.343254
+train epoch 4, batch 110, loss 0.346340
+train epoch 4, batch 120, loss 0.215687
+train epoch 4, batch 130, loss 0.238616
+train epoch 4, batch 140, loss 0.233447
+train epoch 4, batch 150, loss 0.244909
+test average loss 0.0025, accuracy 86.3000
+
+进程已结束,退出代码0
