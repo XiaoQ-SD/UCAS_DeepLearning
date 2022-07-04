@@ -1,7 +1,7 @@
 
 
 class Config(object):
-    num_layers = 3  # LSTM层数
+    num_layers = 10  # LSTM层数
     data_path = 'data/'  # 诗歌的文本文件存放路径
     pickle_path = 'tang.npz'  # 预处理好的二进制文件
     author = None  # 只学习某位作者的诗歌
@@ -9,7 +9,7 @@ class Config(object):
     category = 'poet.tang'  # 类别，唐诗还是宋诗歌(poet.song)
     lr = 1e-3
     weight_decay = 1e-4
-    use_gpu = False
+    use_gpu = True
     epoch = 50
     batch_size = 16
     maxlen = 125  # 超过这个长度的之后字被丢弃，小于这个长度的在前面补空格

@@ -14,7 +14,7 @@ from models.MNIST import MNIST
 # paramaters
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 BATCH_SIZE = 128
-EPOCHS = 4
+EPOCHS = 16
 LEARNING_RATE = 1e-3
 
 # %%

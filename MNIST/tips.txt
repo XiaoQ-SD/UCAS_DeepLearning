@@ -1,0 +1,87 @@
+C:\ProgramData\Anaconda3\python.exe C:/Users/17318/Documents/GitHub/UCAS_DeepLearning/MNIST/main.py
+Loading Datas ...
+Loading Datas Finished
+train datas of 469
+test datas of 79
+train epoch 0, batch 100, current loss 0.313796
+train epoch 0, batch 200, current loss 0.212801
+train epoch 0, batch 300, current loss 0.170484
+train epoch 0, batch 400, current loss 0.146263
+test average loss 0.0003, accuracy 98.6600
+train epoch 1, batch 100, current loss 0.050434
+train epoch 1, batch 200, current loss 0.051553
+train epoch 1, batch 300, current loss 0.049295
+train epoch 1, batch 400, current loss 0.048204
+test average loss 0.0002, accuracy 98.9200
+train epoch 2, batch 100, current loss 0.033484
+train epoch 2, batch 200, current loss 0.032635
+train epoch 2, batch 300, current loss 0.032930
+train epoch 2, batch 400, current loss 0.033986
+test average loss 0.0002, accuracy 99.1400
+train epoch 3, batch 100, current loss 0.022527
+train epoch 3, batch 200, current loss 0.023152
+train epoch 3, batch 300, current loss 0.024255
+train epoch 3, batch 400, current loss 0.025573
+test average loss 0.0002, accuracy 99.0500
+train epoch 4, batch 100, current loss 0.020103
+train epoch 4, batch 200, current loss 0.020762
+train epoch 4, batch 300, current loss 0.020248
+train epoch 4, batch 400, current loss 0.019966
+test average loss 0.0002, accuracy 99.2500
+train epoch 5, batch 100, current loss 0.018650
+train epoch 5, batch 200, current loss 0.019537
+train epoch 5, batch 300, current loss 0.019208
+train epoch 5, batch 400, current loss 0.018723
+test average loss 0.0002, accuracy 99.1200
+train epoch 6, batch 100, current loss 0.014361
+train epoch 6, batch 200, current loss 0.016421
+train epoch 6, batch 300, current loss 0.016103
+train epoch 6, batch 400, current loss 0.017360
+test average loss 0.0002, accuracy 99.1900
+train epoch 7, batch 100, current loss 0.008272
+train epoch 7, batch 200, current loss 0.010291
+train epoch 7, batch 300, current loss 0.011516
+train epoch 7, batch 400, current loss 0.012302
+test average loss 0.0002, accuracy 99.3300
+train epoch 8, batch 100, current loss 0.009151
+train epoch 8, batch 200, current loss 0.010426
+train epoch 8, batch 300, current loss 0.011477
+train epoch 8, batch 400, current loss 0.012030
+test average loss 0.0002, accuracy 99.3000
+train epoch 9, batch 100, current loss 0.009936
+train epoch 9, batch 200, current loss 0.011478
+train epoch 9, batch 300, current loss 0.012138
+train epoch 9, batch 400, current loss 0.011823
+test average loss 0.0002, accuracy 99.1800
+train epoch 10, batch 100, current loss 0.016403
+train epoch 10, batch 200, current loss 0.013766
+train epoch 10, batch 300, current loss 0.012747
+train epoch 10, batch 400, current loss 0.011794
+test average loss 0.0003, accuracy 99.2500
+train epoch 11, batch 100, current loss 0.010149
+train epoch 11, batch 200, current loss 0.009414
+train epoch 11, batch 300, current loss 0.008567
+train epoch 11, batch 400, current loss 0.010076
+test average loss 0.0003, accuracy 99.1800
+train epoch 12, batch 100, current loss 0.006816
+train epoch 12, batch 200, current loss 0.008365
+train epoch 12, batch 300, current loss 0.010673
+train epoch 12, batch 400, current loss 0.010406
+test average loss 0.0002, accuracy 99.2600
+train epoch 13, batch 100, current loss 0.008669
+train epoch 13, batch 200, current loss 0.006852
+train epoch 13, batch 300, current loss 0.006776
+train epoch 13, batch 400, current loss 0.007560
+test average loss 0.0002, accuracy 99.3600
+train epoch 14, batch 100, current loss 0.005855
+train epoch 14, batch 200, current loss 0.004969
+train epoch 14, batch 300, current loss 0.005704
+train epoch 14, batch 400, current loss 0.006912
+test average loss 0.0003, accuracy 99.3200
+train epoch 15, batch 100, current loss 0.008181
+train epoch 15, batch 200, current loss 0.008630
+train epoch 15, batch 300, current loss 0.009639
+train epoch 15, batch 400, current loss 0.009032
+test average loss 0.0003, accuracy 99.2300
+
+进程已结束,退出代码0
