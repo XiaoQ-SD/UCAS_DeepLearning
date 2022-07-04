@@ -1,89 +1,116 @@
-ssh://root@hz-t3.matpool.com:29770/root/miniconda3/envs/myconda/bin/python3.8 -u /mnt/UCAS_DeepLearning/CatDog/main.py
+C:\ProgramData\Anaconda3\python.exe C:/Users/17318/Documents/GitHub/UCAS_DeepLearning/CatDog/main.py
 Loading Data Finished
-train epoch 0, batch 0, loss 0.410272
-train epoch 0, batch 10, loss 0.591961
-train epoch 0, batch 20, loss 0.418389
-train epoch 0, batch 30, loss 0.377900
-train epoch 0, batch 40, loss 0.354773
-train epoch 0, batch 50, loss 0.365993
-train epoch 0, batch 60, loss 0.323303
-train epoch 0, batch 70, loss 0.337449
-train epoch 0, batch 80, loss 0.344980
-train epoch 0, batch 90, loss 0.408317
-train epoch 0, batch 100, loss 0.336166
-train epoch 0, batch 110, loss 0.331982
-train epoch 0, batch 120, loss 0.418028
-train epoch 0, batch 130, loss 0.472415
-train epoch 0, batch 140, loss 0.327935
-train epoch 0, batch 150, loss 0.315834
-test average loss 0.0028, accuracy 84.4200
-train epoch 1, batch 0, loss 0.387414
-train epoch 1, batch 10, loss 0.282305
-train epoch 1, batch 20, loss 0.299657
-train epoch 1, batch 30, loss 0.210179
-train epoch 1, batch 40, loss 0.279516
-train epoch 1, batch 50, loss 0.321817
-train epoch 1, batch 60, loss 0.408976
-train epoch 1, batch 70, loss 0.433896
-train epoch 1, batch 80, loss 0.263296
-train epoch 1, batch 90, loss 0.339018
-train epoch 1, batch 100, loss 0.313650
-train epoch 1, batch 110, loss 0.243236
-train epoch 1, batch 120, loss 0.283748
-train epoch 1, batch 130, loss 0.340171
-train epoch 1, batch 140, loss 0.405997
-train epoch 1, batch 150, loss 0.345617
-test average loss 0.0029, accuracy 83.7800
-train epoch 2, batch 0, loss 0.309069
-train epoch 2, batch 10, loss 0.284015
-train epoch 2, batch 20, loss 0.449576
-train epoch 2, batch 30, loss 0.310542
-train epoch 2, batch 40, loss 0.233712
-train epoch 2, batch 50, loss 0.314334
-train epoch 2, batch 60, loss 0.260253
-train epoch 2, batch 70, loss 0.357895
-train epoch 2, batch 80, loss 0.229961
-train epoch 2, batch 90, loss 0.313607
-train epoch 2, batch 100, loss 0.351998
-train epoch 2, batch 110, loss 0.307949
-train epoch 2, batch 120, loss 0.282627
-train epoch 2, batch 130, loss 0.191054
-train epoch 2, batch 140, loss 0.284597
-train epoch 2, batch 150, loss 0.248789
-test average loss 0.0030, accuracy 82.0600
-train epoch 3, batch 0, loss 0.464571
-train epoch 3, batch 10, loss 0.226935
-train epoch 3, batch 20, loss 0.249269
-train epoch 3, batch 30, loss 0.311486
-train epoch 3, batch 40, loss 0.252671
-train epoch 3, batch 50, loss 0.284695
-train epoch 3, batch 60, loss 0.169586
-train epoch 3, batch 70, loss 0.300598
-train epoch 3, batch 80, loss 0.251992
-train epoch 3, batch 90, loss 0.249635
-train epoch 3, batch 100, loss 0.326373
-train epoch 3, batch 110, loss 0.265994
-train epoch 3, batch 120, loss 0.248916
-train epoch 3, batch 130, loss 0.249467
-train epoch 3, batch 140, loss 0.251358
-train epoch 3, batch 150, loss 0.223418
-test average loss 0.0028, accuracy 84.4200
-train epoch 4, batch 0, loss 0.260753
-train epoch 4, batch 10, loss 0.261050
-train epoch 4, batch 20, loss 0.359434
-train epoch 4, batch 30, loss 0.260096
-train epoch 4, batch 40, loss 0.205845
-train epoch 4, batch 50, loss 0.191977
-train epoch 4, batch 60, loss 0.273062
-train epoch 4, batch 70, loss 0.180066
-train epoch 4, batch 80, loss 0.258374
-train epoch 4, batch 90, loss 0.198707
-train epoch 4, batch 100, loss 0.343254
-train epoch 4, batch 110, loss 0.346340
-train epoch 4, batch 120, loss 0.215687
-train epoch 4, batch 130, loss 0.238616
-train epoch 4, batch 140, loss 0.233447
-train epoch 4, batch 150, loss 0.244909
-test average loss 0.0025, accuracy 86.3000
+train epoch 0, batch 25, current loss 0.691430
+train epoch 0, batch 50, current loss 0.693288
+train epoch 0, batch 75, current loss 0.685124
+train epoch 0, batch 100, current loss 0.681504
+train epoch 0, batch 125, current loss 0.673800
+train epoch 0, batch 150, current loss 0.664766
+test average loss 0.0049, accuracy 64.0200
+train epoch 1, batch 25, current loss 0.600262
+train epoch 1, batch 50, current loss 0.590461
+train epoch 1, batch 75, current loss 0.578092
+train epoch 1, batch 100, current loss 0.568626
+train epoch 1, batch 125, current loss 0.560179
+train epoch 1, batch 150, current loss 0.555370
+test average loss 0.0040, accuracy 74.9400
+train epoch 2, batch 25, current loss 0.506107
+train epoch 2, batch 50, current loss 0.500300
+train epoch 2, batch 75, current loss 0.489637
+train epoch 2, batch 100, current loss 0.492486
+train epoch 2, batch 125, current loss 0.484958
+train epoch 2, batch 150, current loss 0.478978
+test average loss 0.0038, accuracy 78.0800
+train epoch 3, batch 25, current loss 0.473557
+train epoch 3, batch 50, current loss 0.459276
+train epoch 3, batch 75, current loss 0.455667
+train epoch 3, batch 100, current loss 0.452533
+train epoch 3, batch 125, current loss 0.451032
+train epoch 3, batch 150, current loss 0.443501
+test average loss 0.0033, accuracy 81.2600
+train epoch 4, batch 25, current loss 0.411933
+train epoch 4, batch 50, current loss 0.409316
+train epoch 4, batch 75, current loss 0.408670
+train epoch 4, batch 100, current loss 0.406714
+train epoch 4, batch 125, current loss 0.402851
+train epoch 4, batch 150, current loss 0.399764
+test average loss 0.0033, accuracy 80.5000
+train epoch 5, batch 25, current loss 0.375247
+train epoch 5, batch 50, current loss 0.367619
+train epoch 5, batch 75, current loss 0.371349
+train epoch 5, batch 100, current loss 0.367671
+train epoch 5, batch 125, current loss 0.371820
+train epoch 5, batch 150, current loss 0.369912
+test average loss 0.0031, accuracy 83.1600
+train epoch 6, batch 25, current loss 0.329029
+train epoch 6, batch 50, current loss 0.335231
+train epoch 6, batch 75, current loss 0.333405
+train epoch 6, batch 100, current loss 0.331912
+train epoch 6, batch 125, current loss 0.329060
+train epoch 6, batch 150, current loss 0.331374
+test average loss 0.0031, accuracy 82.9800
+train epoch 7, batch 25, current loss 0.316071
+train epoch 7, batch 50, current loss 0.308877
+train epoch 7, batch 75, current loss 0.313316
+train epoch 7, batch 100, current loss 0.308741
+train epoch 7, batch 125, current loss 0.306419
+train epoch 7, batch 150, current loss 0.306233
+test average loss 0.0025, accuracy 86.3200
+train epoch 8, batch 25, current loss 0.265745
+train epoch 8, batch 50, current loss 0.267851
+train epoch 8, batch 75, current loss 0.267066
+train epoch 8, batch 100, current loss 0.275007
+train epoch 8, batch 125, current loss 0.273327
+train epoch 8, batch 150, current loss 0.274390
+test average loss 0.0027, accuracy 85.5600
+train epoch 9, batch 25, current loss 0.227867
+train epoch 9, batch 50, current loss 0.223876
+train epoch 9, batch 75, current loss 0.227997
+train epoch 9, batch 100, current loss 0.230705
+train epoch 9, batch 125, current loss 0.229961
+train epoch 9, batch 150, current loss 0.231290
+test average loss 0.0021, accuracy 89.1000
+train epoch 10, batch 25, current loss 0.215679
+train epoch 10, batch 50, current loss 0.206611
+train epoch 10, batch 75, current loss 0.218717
+train epoch 10, batch 100, current loss 0.221497
+train epoch 10, batch 125, current loss 0.219525
+train epoch 10, batch 150, current loss 0.219829
+test average loss 0.0022, accuracy 88.6000
+train epoch 11, batch 25, current loss 0.194453
+train epoch 11, batch 50, current loss 0.192321
+train epoch 11, batch 75, current loss 0.190616
+train epoch 11, batch 100, current loss 0.189375
+train epoch 11, batch 125, current loss 0.193792
+train epoch 11, batch 150, current loss 0.194479
+test average loss 0.0022, accuracy 88.9000
+train epoch 12, batch 25, current loss 0.161172
+train epoch 12, batch 50, current loss 0.168580
+train epoch 12, batch 75, current loss 0.164995
+train epoch 12, batch 100, current loss 0.165416
+train epoch 12, batch 125, current loss 0.165202
+train epoch 12, batch 150, current loss 0.165153
+test average loss 0.0023, accuracy 88.7400
+train epoch 13, batch 25, current loss 0.148349
+train epoch 13, batch 50, current loss 0.141579
+train epoch 13, batch 75, current loss 0.143501
+train epoch 13, batch 100, current loss 0.145254
+train epoch 13, batch 125, current loss 0.143860
+train epoch 13, batch 150, current loss 0.146176
+test average loss 0.0022, accuracy 89.1200
+train epoch 14, batch 25, current loss 0.123714
+train epoch 14, batch 50, current loss 0.138002
+train epoch 14, batch 75, current loss 0.137008
+train epoch 14, batch 100, current loss 0.134608
+train epoch 14, batch 125, current loss 0.131948
+train epoch 14, batch 150, current loss 0.135854
+test average loss 0.0020, accuracy 89.4400
+train epoch 15, batch 25, current loss 0.103119
+train epoch 15, batch 50, current loss 0.110761
+train epoch 15, batch 75, current loss 0.114026
+train epoch 15, batch 100, current loss 0.119173
+train epoch 15, batch 125, current loss 0.115619
+train epoch 15, batch 150, current loss 0.114863
+test average loss 0.0024, accuracy 89.0400
 
 进程已结束,退出代码0

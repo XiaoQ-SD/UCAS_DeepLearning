@@ -24,8 +24,9 @@ DatasetTrain = 'dataset/train'
 DatasetValidation = 'dataset/validation'
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+# print(DEVICE)
 BATCH_SIZE = 128
-EPOCHS = 5
+EPOCHS = 16
 LEARNING_RATE = 1e-3
 SAVEPATH = 'models/CNN.pth'
 
@@ -89,6 +90,7 @@ optimizer = optim.Adam(model.parameters())
 # %%
 def train(model, device, train_loader, optimizer, epoch):
     model.train()
+    Loss = 0.0
     for batch_index, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device)
         optimizer.zero_grad()
@@ -96,11 +98,12 @@ def train(model, device, train_loader, optimizer, epoch):
         loss = F.cross_entropy(output, target)
         pred = output.softmax(dim=1)
         loss.backward()
+        Loss += loss.item()
         optimizer.step()
-        if batch_index % 10 == 0:
+        if  (batch_index > 0) and(batch_index % 25 == 0):
             # f = open(SAVEPATH, 'w')
             # f.close()
-            print("train epoch %d, batch %d, loss %.6f" % (epoch, batch_index, loss.item()))
+            print("train epoch %d, batch %d, current loss %.6f" % (epoch, batch_index, Loss / (1.0 + batch_index)))
     torch.save(model, SAVEPATH)
 
 
