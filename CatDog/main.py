@@ -1,4 +1,5 @@
 import os
+import time
 import random
 import shutil
 
@@ -75,8 +76,8 @@ transforms = torchvision.transforms.Compose([
 train_dataset = datasets.ImageFolder(root=DatasetTrain, transform=transforms)
 test_dataset = datasets.ImageFolder(root=DatasetValidation, transform=transforms)
 
-train_loader = DataLoader(dataset=train_dataset, batch_size=BATCH_SIZE, shuffle=True)
-test_loader = DataLoader(dataset=test_dataset, batch_size=BATCH_SIZE, shuffle=True)
+train_loader = DataLoader(dataset=train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
+test_loader = DataLoader(dataset=test_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
 
 print("Loading Data Finished")
 # %%
@@ -85,6 +86,7 @@ if os.path.exists(SAVEPATH):
 else:
     model = CNN().to(DEVICE)
 optimizer = optim.Adam(model.parameters())
+start_time = time.time()
 
 
 # %%
@@ -100,10 +102,12 @@ def train(model, device, train_loader, optimizer, epoch):
         loss.backward()
         Loss += loss.item()
         optimizer.step()
-        if  (batch_index > 0) and(batch_index % 25 == 0):
+        if (batch_index > 0) and (batch_index % 25 == 0):
             # f = open(SAVEPATH, 'w')
             # f.close()
-            print("train epoch %d, batch %d, current loss %.6f" % (epoch, batch_index, Loss / (1.0 + batch_index)))
+            current_time = time.time()
+            print("training time %.6f, train epoch %d, batch %d, current loss %.6f" % (
+            (current_time - start_time), epoch, batch_index, Loss / (1.0 + batch_index)))
     torch.save(model, SAVEPATH)
 
 
