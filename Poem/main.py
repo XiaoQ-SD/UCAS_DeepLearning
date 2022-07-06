@@ -33,7 +33,7 @@ if os.path.exists(SAVEPATH):
 else:
     model = model.to(DEVICE)
 
-optimizer = torch.optim.Adam(model.parameters(), lr=3e-6)
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 criterion = nn.CrossEntropyLoss()
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=4)
 start_time = time.time()
@@ -98,7 +98,7 @@ def generate(start_words, max_gen_len, prefix_words=None):
 
 # %%
 def test():
-    start_words = '烟笼寒水月笼沙'
+    start_words = '湖光秋月两相和'
     max_gen_len = 32
     prefix_words = None
     results = generate(start_words, max_gen_len)
@@ -113,7 +113,7 @@ def test():
 # %%
 if __name__ == '__main__':
     # pass
-    test()
-    # for epoch in range(EPOCHS):
-    #     train(epoch)
-    #     torch.save(model, SAVEPATH)
+    for epoch in range(EPOCHS):
+        train(epoch)
+        torch.save(model, SAVEPATH)
+        test()
