@@ -1,0 +1,137 @@
+C:\ProgramData\Anaconda3\python.exe "C:\Program Files\JetBrains\PyCharm 2022.1\plugins\python\helpers\pydev\pydevconsole.py" --mode=client --port=63580
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\17318\\Documents\\GitHub\\UCAS_DeepLearning', 'C:/Users/17318/Documents/GitHub/UCAS_DeepLearning'])
+Python 3.9.13 | packaged by conda-forge | (main, May 27 2022, 16:50:36) [MSC v.1929 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.4.0 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 8.4.0
+Python 3.9.13 | packaged by conda-forge | (main, May 27 2022, 16:50:36) [MSC v.1929 64 bit (AMD64)] on win32
+runfile('C:/Users/17318/Documents/GitHub/UCAS_DeepLearning/TextCNN/main.py', wdir='C:/Users/17318/Documents/GitHub/UCAS_DeepLearning/TextCNN')
+learning rate 0.001000
+training time 3.384349, epoch 1, solved 50, current loss 0.664133
+training time 3.821124, epoch 1, solved 100, current loss 0.616252
+training time 4.241859, epoch 1, solved 150, current loss 0.579998
+epoch 1 finished, average loss 0.578714, accuracy 0.6896
+validate 1 finished, loss 0.431693, accuracy 0.8113
+start testing
+test accuracy 0.7778
+learning rate 0.001000
+training time 5.223688, epoch 2, solved 50, current loss 0.424079
+training time 5.638923, epoch 2, solved 100, current loss 0.407105
+training time 6.065113, epoch 2, solved 150, current loss 0.396293
+epoch 2 finished, average loss 0.395561, accuracy 0.8238
+validate 2 finished, loss 0.302174, accuracy 0.8820
+start testing
+test accuracy 0.8022
+learning rate 0.001000
+training time 7.051218, epoch 3, solved 50, current loss 0.296544
+training time 7.480728, epoch 3, solved 100, current loss 0.289470
+training time 7.901354, epoch 3, solved 150, current loss 0.286430
+epoch 3 finished, average loss 0.287630, accuracy 0.8838
+validate 3 finished, loss 0.203524, accuracy 0.9303
+start testing
+test accuracy 0.8374
+learning rate 0.001000
+training time 8.871566, epoch 4, solved 50, current loss 0.197921
+training time 9.329145, epoch 4, solved 100, current loss 0.197327
+training time 9.799633, epoch 4, solved 150, current loss 0.195693
+epoch 4 finished, average loss 0.196401, accuracy 0.9280
+validate 4 finished, loss 0.124291, accuracy 0.9647
+start testing
+test accuracy 0.8428
+learning rate 0.001000
+training time 10.799174, epoch 5, solved 50, current loss 0.120865
+training time 11.235553, epoch 5, solved 100, current loss 0.119722
+training time 11.700840, epoch 5, solved 150, current loss 0.120268
+epoch 5 finished, average loss 0.121078, accuracy 0.9618
+validate 5 finished, loss 0.071242, accuracy 0.9849
+start testing
+test accuracy 0.8401
+learning rate 0.001000
+training time 12.741097, epoch 6, solved 50, current loss 0.063264
+training time 13.201170, epoch 6, solved 100, current loss 0.063559
+training time 13.654359, epoch 6, solved 150, current loss 0.066149
+epoch 6 finished, average loss 0.067036, accuracy 0.9845
+validate 6 finished, loss 0.035099, accuracy 0.9957
+start testing
+test accuracy 0.8482
+learning rate 0.001000
+training time 14.738773, epoch 7, solved 50, current loss 0.031593
+training time 15.184674, epoch 7, solved 100, current loss 0.032943
+training time 15.651126, epoch 7, solved 150, current loss 0.032600
+epoch 7 finished, average loss 0.032462, accuracy 0.9955
+validate 7 finished, loss 0.016198, accuracy 0.9991
+start testing
+test accuracy 0.8537
+learning rate 0.001000
+training time 16.647706, epoch 8, solved 50, current loss 0.016746
+training time 17.130054, epoch 8, solved 100, current loss 0.015804
+training time 17.576169, epoch 8, solved 150, current loss 0.015217
+epoch 8 finished, average loss 0.015225, accuracy 0.9991
+validate 8 finished, loss 0.008516, accuracy 0.9998
+start testing
+test accuracy 0.8537
+learning rate 0.000330
+training time 18.563633, epoch 9, solved 50, current loss 0.008914
+training time 19.021468, epoch 9, solved 100, current loss 0.008514
+training time 19.474855, epoch 9, solved 150, current loss 0.008297
+epoch 9 finished, average loss 0.008282, accuracy 0.9998
+validate 9 finished, loss 0.007106, accuracy 0.9999
+start testing
+test accuracy 0.8537
+learning rate 0.000330
+training time 20.459671, epoch 10, solved 50, current loss 0.006971
+training time 20.896813, epoch 10, solved 100, current loss 0.007046
+training time 21.329973, epoch 10, solved 150, current loss 0.006902
+epoch 10 finished, average loss 0.006959, accuracy 0.9999
+validate 10 finished, loss 0.006012, accuracy 0.9999
+start testing
+test accuracy 0.8537
+learning rate 0.000330
+training time 22.316149, epoch 11, solved 50, current loss 0.006133
+training time 22.742629, epoch 11, solved 100, current loss 0.005937
+training time 23.163839, epoch 11, solved 150, current loss 0.005895
+epoch 11 finished, average loss 0.005888, accuracy 0.9999
+validate 11 finished, loss 0.005128, accuracy 0.9999
+start testing
+test accuracy 0.8537
+learning rate 0.000330
+training time 24.196682, epoch 12, solved 50, current loss 0.005170
+training time 24.622876, epoch 12, solved 100, current loss 0.005063
+training time 25.050061, epoch 12, solved 150, current loss 0.004974
+epoch 12 finished, average loss 0.005011, accuracy 0.9999
+validate 12 finished, loss 0.004322, accuracy 1.0000
+start testing
+test accuracy 0.8564
+learning rate 0.000330
+training time 26.042843, epoch 13, solved 50, current loss 0.004151
+training time 26.509262, epoch 13, solved 100, current loss 0.004281
+training time 27.004375, epoch 13, solved 150, current loss 0.004238
+epoch 13 finished, average loss 0.004254, accuracy 1.0000
+validate 13 finished, loss 0.003726, accuracy 1.0000
+start testing
+test accuracy 0.8564
+learning rate 0.000330
+training time 28.000397, epoch 14, solved 50, current loss 0.003552
+training time 28.432561, epoch 14, solved 100, current loss 0.003640
+training time 28.867711, epoch 14, solved 150, current loss 0.003624
+epoch 14 finished, average loss 0.003665, accuracy 1.0000
+validate 14 finished, loss 0.003197, accuracy 1.0000
+start testing
+test accuracy 0.8591
+learning rate 0.000330
+training time 29.852520, epoch 15, solved 50, current loss 0.003096
+training time 30.285679, epoch 15, solved 100, current loss 0.003155
+training time 30.728797, epoch 15, solved 150, current loss 0.003116
+epoch 15 finished, average loss 0.003126, accuracy 1.0000
+validate 15 finished, loss 0.002751, accuracy 1.0000
+start testing
+test accuracy 0.8591
+learning rate 0.000330
+training time 31.731976, epoch 16, solved 50, current loss 0.002738
+training time 32.160618, epoch 16, solved 100, current loss 0.002681
+training time 32.591786, epoch 16, solved 150, current loss 0.002691
+epoch 16 finished, average loss 0.002702, accuracy 1.0000
+validate 16 finished, loss 0.002387, accuracy 1.0000
+start testing
+test accuracy 0.8591
