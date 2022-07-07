@@ -98,8 +98,8 @@ def generate(start_words, max_gen_len, prefix_words=None):
 
 # %%
 def test():
-    start_words = '湖光秋月两相和'
-    max_gen_len = 32
+    start_words = '一二三四五'
+    max_gen_len = 24
     prefix_words = None
     results = generate(start_words, max_gen_len)
     poetry = ''
@@ -114,6 +114,6 @@ def test():
 if __name__ == '__main__':
     # pass
     for epoch in range(EPOCHS):
-        train(epoch)
-        torch.save(model, SAVEPATH)
+        # train(epoch)
+        # torch.save(model, SAVEPATH)
         test()

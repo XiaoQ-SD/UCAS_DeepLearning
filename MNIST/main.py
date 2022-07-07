@@ -8,7 +8,8 @@ import numpy as np
 import torchvision.transforms
 from torchvision import datasets
 from torch.utils.data import DataLoader
-from models.MNIST import MNIST
+from models.MNIST import *
+
 
 # %%
 # paramaters

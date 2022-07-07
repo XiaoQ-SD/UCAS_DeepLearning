@@ -37,7 +37,7 @@ class CONFIG():
 
 
 config = CONFIG()  # 配置模型参数
-learning_rate = 0.001  # 学习率
+learning_rate = 1e-3  # 学习率
 BATCH_SIZE = 128  # 训练批量
 EPOCHS = 16  # 训练轮数
 SAVEPATH = 'model/TextCNN.pth'  # 预训练模型路径
